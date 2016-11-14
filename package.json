@@ -1,0 +1,55 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server --port 8888",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.9.1",
+    "es6-promise": "^3.2.1",
+    "moment": "^2.13.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-jest": "^15.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "flux": "^2.1.1",
+    "html-webpack-plugin": "^2.15.0",
+    "jest": "^15.1.1",
+    "jquery": "^2.2.3",
+    "microevent-github": "^1.0.0",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.2",
+    "react-addons-css-transition-group": "^15.2.1",
+    "react-datepicker": "^0.28.1",
+    "react-modal": "^1.1.2",
+    "react-test-renderer": "^15.3.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "jest": {
+    "automock": true,
+    "unmockedModulePathPatterns": [
+      "axios",
+      "<rootDir>/node_modules/react/",
+      "<rootDir>/node_modules/react-dom/",
+      "<rootDir>/node_modules/react-test-renderer/",
+      "<rootDir>/node_modules/react-addons-test-utils/"
+    ]
+  }
+}
